@@ -17,7 +17,7 @@
 }
 
 - (void)testCase {
-    id<DemoProtocol> demo = [DemoFactory create:DemoTypeCPU];
+    id<DemoProtocol> demo = [DemoFactory create:DemoTypeChess];
     
     [demo invokeTestCase];
 }
