@@ -6,21 +6,20 @@
 //
 
 #import "ViewController.h"
+#import "DemoFactory.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    [self testCase];
 }
 
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
+- (void)testCase {
+    id<DemoProtocol> demo = [DemoFactory create:DemoTypeCPU];
+    
+    [demo invokeTestCase];
 }
-
 
 @end

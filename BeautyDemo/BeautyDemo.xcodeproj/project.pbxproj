@@ -12,6 +12,10 @@
 		3E65E70828B9A929003C0A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E65E70728B9A929003C0A62 /* Assets.xcassets */; };
 		3E65E70B28B9A929003C0A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E65E70928B9A929003C0A62 /* Main.storyboard */; };
 		3E65E70D28B9A929003C0A62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E65E70C28B9A929003C0A62 /* main.m */; };
+		3E65E71C28B9AB23003C0A62 /* CPUDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E65E71B28B9AB23003C0A62 /* CPUDemo.m */; };
+		3E65E71F28B9AB5E003C0A62 /* ChessDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E65E71E28B9AB5E003C0A62 /* ChessDemo.m */; };
+		3E65E72228B9AB6B003C0A62 /* DemoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E65E72128B9AB6B003C0A62 /* DemoFactory.m */; };
+		3E65E72528B9ACD6003C0A62 /* BaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E65E72428B9ACD6003C0A62 /* BaseDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,15 @@
 		3E65E70A28B9A929003C0A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E65E70C28B9A929003C0A62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E65E70E28B9A929003C0A62 /* BeautyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeautyDemo.entitlements; sourceTree = "<group>"; };
+		3E65E71928B9AAF1003C0A62 /* DemoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoProtocol.h; sourceTree = "<group>"; };
+		3E65E71A28B9AB23003C0A62 /* CPUDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPUDemo.h; sourceTree = "<group>"; };
+		3E65E71B28B9AB23003C0A62 /* CPUDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPUDemo.m; sourceTree = "<group>"; };
+		3E65E71D28B9AB5E003C0A62 /* ChessDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChessDemo.h; sourceTree = "<group>"; };
+		3E65E71E28B9AB5E003C0A62 /* ChessDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChessDemo.m; sourceTree = "<group>"; };
+		3E65E72028B9AB6B003C0A62 /* DemoFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoFactory.h; sourceTree = "<group>"; };
+		3E65E72128B9AB6B003C0A62 /* DemoFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoFactory.m; sourceTree = "<group>"; };
+		3E65E72328B9ACD6003C0A62 /* BaseDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDemo.h; sourceTree = "<group>"; };
+		3E65E72428B9ACD6003C0A62 /* BaseDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +73,29 @@
 				3E65E70228B9A928003C0A62 /* AppDelegate.m */,
 				3E65E70428B9A928003C0A62 /* ViewController.h */,
 				3E65E70528B9A928003C0A62 /* ViewController.m */,
+				3E65E71428B9A966003C0A62 /* Demo */,
 				3E65E70728B9A929003C0A62 /* Assets.xcassets */,
 				3E65E70928B9A929003C0A62 /* Main.storyboard */,
 				3E65E70C28B9A929003C0A62 /* main.m */,
 				3E65E70E28B9A929003C0A62 /* BeautyDemo.entitlements */,
 			);
 			path = BeautyDemo;
+			sourceTree = "<group>";
+		};
+		3E65E71428B9A966003C0A62 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3E65E71928B9AAF1003C0A62 /* DemoProtocol.h */,
+				3E65E72028B9AB6B003C0A62 /* DemoFactory.h */,
+				3E65E72128B9AB6B003C0A62 /* DemoFactory.m */,
+				3E65E72328B9ACD6003C0A62 /* BaseDemo.h */,
+				3E65E72428B9ACD6003C0A62 /* BaseDemo.m */,
+				3E65E71A28B9AB23003C0A62 /* CPUDemo.h */,
+				3E65E71B28B9AB23003C0A62 /* CPUDemo.m */,
+				3E65E71D28B9AB5E003C0A62 /* ChessDemo.h */,
+				3E65E71E28B9AB5E003C0A62 /* ChessDemo.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E65E70628B9A928003C0A62 /* ViewController.m in Sources */,
+				3E65E72228B9AB6B003C0A62 /* DemoFactory.m in Sources */,
+				3E65E71F28B9AB5E003C0A62 /* ChessDemo.m in Sources */,
+				3E65E71C28B9AB23003C0A62 /* CPUDemo.m in Sources */,
+				3E65E72528B9ACD6003C0A62 /* BaseDemo.m in Sources */,
 				3E65E70D28B9A929003C0A62 /* main.m in Sources */,
 				3E65E70328B9A928003C0A62 /* AppDelegate.m in Sources */,
 			);
